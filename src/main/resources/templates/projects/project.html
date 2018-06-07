@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="admin/header :: header">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Betsol Training Portal</title>
+
+
+</head>
+
+<body class="fixed-nav" id="page-top">
+	<div th:replace="admin/layout :: layout"></div>
+
+<div class="content-wrapper py-3">
+
+
+		<!-- /.container-fluid -->
+		
+
+		<div class="container-fluid">
+			<!-- Breadcrumbs -->
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="/projects/project">Projects</a></li>
+				<!-- <li class="breadcrumb-item active">My project</li> -->
+			</ol>
+			<!-- Icon Cards -->
+			
+			<form action="/projects/searchSkill" method="POST">
+			<label>Search for Skill :<input type="text" name="skillsearch" class="form-control form-control-sm" placeholder=""></label>
+			<button type="submit" data-toggle="modal" data-target="#myModal"> GO</button>
+			</form>
+			<!-- <a href="/projects/searchSkill">Search for skill</a> -->
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-xl-3 col-sm-6 mb-3">
+					<div class="card text-white bg-primary o-hidden h-100">
+						<div class="card-body">
+							<div class="card-body-icon">
+								<i class="fa fa-fw fa-comments"></i>
+							</div>
+							<div class="mr-5">All Projects</div>
+						</div>
+						<a class="card-footer text-white clearfix small z-1" href="/projects/viewallprojects">
+							<span class="float-left">View All projects</span> <span
+							class="float-right"> <i class="fa fa-angle-right"></i>
+						</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div th:replace="admin/footer :: footer"></div>
+</body>
+
+</html>

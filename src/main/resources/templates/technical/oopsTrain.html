@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="admin/header :: header">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Betsol Training Portal</title>
+
+
+</head>
+
+<body style="background-image: url('/images/bg.jpg');
+             background-repeat: no-repeat;
+             background-size: 100% 675px;
+             overflow-x: hidden;
+             overflow-y: hidden;"  class="fixed-nav" id="page-top">
+	<div th:replace="admin/layout :: layout"></div>
+<div class="content-wrapper py-3">
+
+      <div class="vid" >
+<img class="vid"  src="/images/giphy.gif" alt="Mountain View" >
+</div>
+<a class="btn btn-md btn-info btn-block col-sm-2"
+							name="Continue" type="button" style=" 
+    margin-right: 12px;
+    float: right;
+" href="/technical/oops">Continue</a>
+    </div>
+
+
+
+	<div th:replace="admin/footer :: footer"></div>
+
+</body>
+
+</html>

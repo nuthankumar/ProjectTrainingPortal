@@ -1,0 +1,18 @@
+.admin-message-text {
+	font-style: normal;
+	font-size: 22px;
+	color: #004080;
+}
+
+#page-wrap {
+	margin-top: -9px;
+	height: 592px;
+	width: 500px;
+	margin: 0 auto;
+	overflow: scroll;
+}
+.vid{
+	    width: 792px;
+    height: 500px;
+    margin-left: 50px;
+}

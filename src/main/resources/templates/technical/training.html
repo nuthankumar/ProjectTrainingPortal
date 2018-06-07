@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="admin/header :: header">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+</head>
+
+<body style="background-image: url('/images/bg.jpg');
+             background-repeat: no-repeat;
+             background-size: 100% 675px;
+             overflow-x: hidden;
+             overflow-y: hidden;" class="fixed-nav" id="page-top">
+	<div th:replace="admin/layout :: layout"></div>
+	<div class="content-wrapper py-3">
+
+
+		<!-- /.container-fluid -->
+
+
+		<div class="container-fluid">
+
+			<!-- Breadcrumbs -->
+<ol class="breadcrumb">
+            <li class="breadcrumb-item">Training</li>
+
+        </ol>
+
+			<!-- Icon Cards -->
+			<div  style="
+    height: 234px;
+">
+				
+				<div class="card-body">
+					<div class="row">
+						<div class="bd-example" >
+
+
+
+							<!-- /btn-group -->
+							
+							<div class="btn-group p-1" th:each="train:${training}">
+								<button type="button" class="btn btn-info dropdown-toggle"
+									data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false" th:text="${train.tname}"></button>
+								<div class="dropdown-menu" >
+									<a class="dropdown-item" th:each="cor:${train.courses}"
+									 href="/technical/oopsTrain" th:text="${cor.cname}"></a>
+								</div>
+							</div>
+
+						
+					</div>
+					
+				</div>
+
+			</div>
+		</div>
+		<div th:replace="admin/footer :: footer"></div>
+</body>
+
+</html>

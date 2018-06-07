@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="admin/header :: header">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Betsol Training Portal</title>
+
+
+</head>
+
+<body class="fixed-nav" id="page-top">
+	<div th:replace="admin/layout :: layout"></div>
+
+<div class="content-wrapper py-3">
+
+
+		<!-- /.container-fluid -->
+		
+
+		<div class="container-fluid">
+			<!-- Breadcrumbs -->
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="/projects/project">Projects</a></li>
+				<!-- <li class="breadcrumb-item active">My project</li> -->
+			</ol>
+			    <div class="card mb-3">
+          <div class="card-header">
+            <i class="fa fa-table"></i>
+            List of all Projects
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered" width="100%" id="dataTable" cellspacing="0">
+                <thead>
+					<tr>
+						<th>Project Name</th>
+						<th>Project Domain</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="project:${listofProject}">
+						<td th:text="${project.projectName}"></td>
+						<td th:text="${project.domain}"></td>
+					</tr>
+				 </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card-footer small text-muted">
+          </div>
+        </div>
+	</div>
+	<div th:replace="admin/footer :: footer"></div>
+</body>
+
+</html>
