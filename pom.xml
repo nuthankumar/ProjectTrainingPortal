@@ -10,6 +10,7 @@
 
 	<name>BetsolTrainingPortal</name>
 <!-- Testing nuthan -->
+<!-- Command line changes -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
