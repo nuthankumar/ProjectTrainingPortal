@@ -9,7 +9,7 @@
 	<packaging>war</packaging>
 
 	<name>BetsolTrainingPortal</name>
-
+<!-- Testing nuthan -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
